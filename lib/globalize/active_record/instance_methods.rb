@@ -1,3 +1,4 @@
+require 'ruby2_keywords'
 module Globalize
   module ActiveRecord
     module InstanceMethods
@@ -158,7 +159,7 @@ module Globalize
         Globalize.fallbacks(locale)
       end
 
-      def save(*)
+      ruby2_keywords def save(*)
         result = Globalize.with_locale(translation.locale || I18n.default_locale) do
           without_fallbacks do
             super

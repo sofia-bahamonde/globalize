@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gem "sqlite3", "~> 1.4", platforms: [:ruby, :rbx]
 gem "activemodel", "6.1.0"
 gem "activerecord", "6.1.0"
+gem "ruby2_keywords"
 
 group :mysql do
   gem "mysql2", platforms: [:ruby, :rbx]
